@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float tutorial</title>
+    <style>
+        .container{
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+        /* box-sizing */
+        .con{
+            width: 100%;
+            height: 50vh;
+            background-color: aquamarine;
+        }
+        .con>div{
+            width: 50%;
+            border: 10px solid orange;
+            /* box-sizing used */
+            box-sizing: border-box;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            Bangladesh
+        </div>
+        <div class="right">
+            Bangladesh
+        </div>
+    </div>
+    <div class="clear">
+
+    </div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, unde!</p>
+    <!-- box-sizing start -->
+    <div class="con">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, et labore, saepe at, quos ex velit quo repellat obcaecati reprehenderit rerum? Voluptatum possimus magni ipsum, aperiam accusantium minima quis magnam ab rerum corporis itaque facilis vel est reiciendis eum labore beatae placeat earum, tenetur sit odio harum soluta? Doloremque, sed.</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, praesentium! In molestiae voluptatibus omnis minima, officiis totam animi esse quam minus obcaecati? Enim, architecto! Illo architecto magni pariatur corrupti impedit, nam, est possimus voluptate quia dicta dignissimos facilis a cumque. Cum natus alias at nisi totam quisquam deleniti omnis voluptas.</div>
+    </div>
+    <!-- box-sizing end -->
+</body>
+</html>

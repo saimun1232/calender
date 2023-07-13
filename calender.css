@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 100%;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns:50px 50px 50px 50px 50px 50px 50px;
+    grid-gap: 10px;
+    background-color: cadetblue;
+    max-width: 40%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+.month-name{}
+.day-name, .day{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    box-shadow:inset 5px 5px 10px rgb(68, 160, 163),inset -5px -5px 10px rgb(135, 166, 167);
+}
+.day-name{
+    background-color: rgb(255, 174, 0);
+}
+.day{
+    background-color: coral;
+}
+.month-name{
+    border: none;
+    border-radius: 20px;
+    grid-column: 1/8;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+}

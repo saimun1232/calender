@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient tutorial</title>
+    <style>
+        .container, .container1,.container2{
+            max-width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            background-image: linear-gradient(to right , rgba(25, 40, 0, 0.927) ,rgba(0, 12, 52,.5));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            text-shadow: 10px 10px 5px red;
+        }
+        .container1{
+            background-image: radial-gradient(circle, rgba(157, 255, 0, 0.5) , rgba(0, 255, 64, 0.5),rgba(0, 60, 255, 0.5));
+            text-shadow: 10px 10px 5px rgb(0, 0, 0);
+        }
+        .container2{
+            background-image: linear-gradient(45deg, rgba(21, 0, 255, 0.5) , rgba(255, 153, 0, 0.5),rgba(0, 221, 255, 0.5));
+            text-shadow: 10px 10px 5px rgb(43, 0, 255);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Hello Bangladesh
+    </div>
+    <br>
+    <div class="container1">
+        Hello Bangladesh
+    </div>
+    <br>
+    <div class="container2">
+        Hello Bangladesh
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position tutorial</title>
+    <style>
+        nav{
+            background-color: aquamarine;
+            color: black;
+            max-width: 50%;
+            height: 10vh;
+            position: static;
+            top:50px;
+            bottom: 50px;
+            /* dont work any top bottom value because static position */
+        }
+        .con{
+            background-color: rgb(73, 73, 73);
+            color: rgb(255, 255, 255);
+            max-width: 50%;
+            height: 20vh;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            /* relative position is not delete his own position but move anywhere */
+
+        }
+        .don{
+            background-color: rgb(0, 181, 0);
+            color: rgb(0, 0, 0);
+            max-width: 50%;
+            height: 50vh;
+            position: relative;
+            top: 200px;
+        }
+        .von{
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(255, 19, 2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .gon{
+            width: 200px;
+            background-color: aqua;
+            height: 10vh;
+            position: sticky;
+            top: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>Hello Bangladesh</nav>
+    <br>
+    <div class="con">
+        Hello Bangladesh
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, repellendus?</p>
+    <div class="don">
+        <div class="von">
+            Hello Bangladesh
+        </div>
+    </div>
+    
+    <div class="gon">
+        Hello Bangladesh
+    </div>
+    <div class="don">
+        <div class="von">
+            Hello Bangladesh
+        </div>
+    </div>
+    <div class="don">
+        <div class="von">
+            Hello Bangladesh
+        </div>
+    </div>
+    <div class="don">
+        <div class="von">
+            Hello Bangladesh
+        </div>
+    </div>
+</body>
+</html>
